@@ -190,7 +190,7 @@ namespace UnityNuGet
             return await PackageDownloader.GetDownloadResourceResultAsync(
                 _sourceRepositories,
                 packageIdentity,
-                new PackageDownloadContext(_sourceCacheContext),
+                new PackageDownloadContext(_sourceCacheContext, null, false, PackageSourceMapping.GetPackageSourceMapping(_settings)),
                 SettingsUtility.GetGlobalPackagesFolder(_settings),
                 _logger, CancellationToken.None);
         }
