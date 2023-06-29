@@ -15,11 +15,11 @@
   },
   "I18Next.Net": {
     "listed": true,
-    "version": "0.7.0"
+    "version": "0.7.2"
   },
   "I18Next.Net.Abstractions": {
     "listed": true,
-    "version": "0.7.0"
+    "version": "0.7.2"
   },
   "IDisposableAnalyzers": {
     "listed": true,
@@ -132,6 +132,11 @@
   "Roslynator.Formatting.Analyzers": {
     "listed": true,
     "version": "3.3.0",
+    "analyzer": true
+  },
+  "SonarAnalyzer.CSharp": {
+    "listed": true,
+    "version": "9.0.0.68202",
     "analyzer": true
   },
   "System.Buffers": {
