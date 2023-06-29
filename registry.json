@@ -168,6 +168,10 @@
     "version": "1.0.0",
     "analyzer": true
   },
+  "TrackMan.SharedCalculator": {
+    "listed": true,
+    "version": "6.167.0"
+  },
   "Unity3D.Interpolate.NetStandard2": {
     "listed": true,
     "version": "1.0.0"
