@@ -15,11 +15,11 @@
   },
   "I18Next.Net": {
     "listed": true,
-    "version": "0.7.2"
+    "version": "[0.7.2,)"
   },
   "I18Next.Net.Abstractions": {
     "listed": true,
-    "version": "0.7.2"
+    "version": "[0.7.2,)"
   },
   "IDisposableAnalyzers": {
     "listed": true,
