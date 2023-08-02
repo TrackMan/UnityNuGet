@@ -102,6 +102,15 @@ guid: {{ guid }}
                     enablesIos = (platIos != null) ? 1 : 0,
                     enablesEditor = (platEditor != null) ? 1 : 0,
 
+                    excludesWin = (platWin != null) ? 0 : 1,
+                    excludesWin64 = (platWin64 != null) ? 0 : 1,
+                    excludesLinux64 = (platLinux64 != null) ? 0 : 1,
+                    excludesOsx = (platOsx != null) ? 0 : 1,
+                    excludesAndroid = (platAndroid != null) ? 0 : 1,
+                    excludesWasm = (platWasm != null) ? 0 : 1,
+                    excludesIos = (platIos != null) ? 0 : 1,
+                    excludesEditor = (platEditor != null) ? 0 : 1,
+
                     cpuWin = (platWin?.Cpu ?? UnityCpu.None).GetName(),
                     cpuWin64 = (platWin64?.Cpu ?? UnityCpu.None).GetName(),
                     cpuLinux64 = (platLinux64?.Cpu ?? UnityCpu.None).GetName(),
@@ -119,14 +128,14 @@ guid: {{ guid }}
     second:
       enabled: 0
       settings:
-        Exclude Android: {{ 1 - enables_android }}
-        Exclude Editor: {{ 1 - enables_editor }}
-        Exclude Linux64: {{ 1 - enables_linux64 }}
-        Exclude OSXUniversal: {{ 1 - enables_osx }}
-        Exclude WebGL: {{ 1 - enables_wasm }}
-        Exclude Win: {{ 1 - enables_win }}
-        Exclude Win64: {{ 1 - enables_win64 }}
-        Exclude iOS: {{ 1 - enables_ios }}";
+        Exclude Android: {{ excludes_android }}
+        Exclude Editor: {{ excludes_editor }}
+        Exclude Linux64: {{ excludes_linux64 }}
+        Exclude OSXUniversal: {{ excludes_osx }}
+        Exclude WebGL: {{ excludes_wasm }}
+        Exclude Win: {{ excludes_win }}
+        Exclude Win64: {{ excludes_win64 }}
+        Exclude iOS: {{ excludes_ios }}";
 
                 const string perPlatformSettingsText = @"
   - first:
