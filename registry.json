@@ -1,481 +1,66 @@
 {
-  "Akka": {
+  "clipper.NetStandard2": {
     "listed": true,
-    "version": "1.4.1"
+    "version": "6.4.2"
   },
-  "Antlr4.Runtime.Standard": {
+  "Clipper2": {
     "listed": true,
-    "version": "4.9.1"
-  },
-  "Asmodat.Standard.SSH.NET": {
-    "listed": true,
-    "version": "[1.0.0,1.0.0.1]"
-  },
-  "AsyncAwaitBestPractices": {
-    "listed": true,
-    "version": "4.0.1"
-  },
-  "AsyncAwaitBestPractices.MVVM": {
-    "listed": true,
-    "version": "5.0.2"
-  },
-  "AsyncKeyedLock": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "AutoMapper": {
-    "listed": true,
-    "version": "7.0.1"
-  },
-  "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-    "listed": true,
-    "version": "3.0.1"
-  },
-  "AutomaticGraphLayout": {
-    "listed": true,
-    "version": "1.1.4.3"
-  },
-  "AWSSDK.Core": {
-    "listed": true,
-    "version": "3.3.100"
-  },
-  "AWSSDK.S3": {
-    "listed": true,
-    "version": "3.3.100"
-  },
-  "AWSSDK.SecurityToken": {
-    "listed": true,
-    "version": "3.3.100"
-  },
-  "Ben.Demystifier": {
-    "listed": true,
-    "version": "0.0.43"
-  },
-  "BouncyCastle.Cryptography": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Boxed.Mapping": {
-    "listed": true,
-    "version": "1.2.0"
-  },
-  "BugSplatDotNetStandard": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Castle.Core": {
-    "listed": true,
-    "version": "5.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "CircularBuffer": {
-    "listed": true,
-    "version": "1.0.2"
-  },
-  "CLSS.Constants.CollectionPool": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Constants.DefaultRandom": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Constants.NoOp": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Constants.ValueEquivalentStrings": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.CommonMathOps": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IComparable.ClampToRange": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IComparable.InRange": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IDictionary.GetOrAdd": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IDictionary.MoveKey": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IDictionary.RemoveAndProcess": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IDictionary.SwapKeys": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IEnumerable.ForEach": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IEnumerable.Looping": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IEnumerable.MinMaxBy": {
-    "listed": true,
-    "version": "1.1.0"
-  },
-  "CLSS.ExtensionMethods.IEnumerator.LoopNext": {
-    "listed": true,
-    "version": "1.0.1"
-  },
-  "CLSS.ExtensionMethods.IList.ExclusiveSample": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.FillBy": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.FirstLastIndex": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.GetLoopingElementAt": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.GetRandom": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.GetWeightedRandom": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.RemoveAndProcess": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.Shuffle": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.IList.SwapIndices": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.Object.As": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.Object.Is": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.Object.ToStringFormattedBy": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.Pipe": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.Reference.Action.Once": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.ExtensionMethods.String.AsEnum": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.AgnosticObjectPool": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.EventLatch": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.MemoizedFunc": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.Reference": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.SortedAction": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.ValueRange": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CLSS.Types.WeightedSampler": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "codecracker.CSharp": {
-    "listed": true,
-    "version": "1.1.0",
-    "analyzer": true
-  },
-  "CommandLineParser": {
-    "listed": true,
-    "version": "2.4.0"
-  },
-  "CommunityToolkit.Mvvm": {
-    "listed": true,
-    "version": "7.0.1"
-  },
-  "ComradeVanti.CSharpTools.Opt": {
-    "listed": true,
-    "version": "1.0.2"
-  },
-  "ComradeVanti.CSharpTools.Res": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Coroutine.NET": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "CSharpFunctionalExtensions": {
-    "listed": true,
-    "version": "1.8.1"
-  },
-  "CsvHelper": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "Dev.ComradeVanti.Nothing": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "DnsClient": {
-    "listed": true,
-    "version": "1.1.0"
-  },
-  "Eflatun.Expansions": {
-    "listed": true,
-    "version": "0.0.1"
+    "version": "1.2.3"
   },
   "ErrorProne.NET.CoreAnalyzers": {
     "listed": true,
     "version": "0.1.2",
     "analyzer": true
   },
-  "ErrorProne.NET.Structs": {
+  "ExplicitDefaultAccessModifiersAnalyzer": {
     "listed": true,
-    "version": "0.1.2",
+    "version": "1.1.0",
     "analyzer": true
   },
-  "FastEnum": {
+  "I18Next.Net": {
     "listed": true,
-    "version": "1.0.0"
+    "version": "[0.7.2,)"
   },
-  "FluentAssertions": {
+  "I18Next.Net.Abstractions": {
     "listed": true,
-    "version": "5.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "FluentValidation": {
-    "listed": true,
-    "version": "7.3.0"
-  },
-  "FluentValidation.DependencyInjectionExtensions": {
-    "listed": true,
-    "version": "8.2.2"
-  },
-  "GeneticSharp": {
-    "listed": true,
-    "version": "[2.0.0,3.0.0)"
-  },
-  "Google.Apis": {
-    "listed": true,
-    "version": "1.35.0"
-  },
-  "Google.Apis.AndroidPublisher.v3": {
-    "listed": true,
-    "version": "1.35.1.1312"
-  },
-  "Google.Apis.Auth": {
-    "listed": true,
-    "version": "1.35.0"
-  },
-  "Google.Apis.Core": {
-    "listed": true,
-    "version": "1.35.0"
-  },
-  "Google.Protobuf": {
-    "listed": true,
-    "version": "3.8.0"
-  },
-  "Grpc.Core": {
-    "listed": true,
-    "version": "1.20.0"
-  },
-  "Grpc.Core.Api": {
-    "listed": true,
-    "version": "1.20.0"
-  },
-  "Grpc.Net.Client": {
-    "listed": true,
-    "version": "2.36.0"
-  },
-  "Grpc.Net.Client.Web": {
-    "listed": true,
-    "version": "2.36.0"
-  },
-  "Grpc.Net.ClientFactory": {
-    "listed": true,
-    "version": "2.37.0"
-  },
-  "Grpc.Net.Common": {
-    "listed": true,
-    "version": "2.36.0"
-  },
-  "H.InputSimulator": {
-    "listed": true,
-    "version": "1.0.8",
-    "defineConstraints": [
-      "UNITY_EDITOR_WIN || UNITY_STANDALONE_WIN"
-    ]
-  },
-  "HarmonyX": {
-    "listed": true,
-    "version": "2.0.2",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
+    "version": "[0.7.2,)"
   },
   "IDisposableAnalyzers": {
     "listed": true,
     "version": "1.0.0",
     "analyzer": true
   },
-  "Injecter": {
+  "Jaeger": {
+    "listed": true,
+    "version": "[0.2.2,0.3.3)"
+  },
+  "Jaeger.Thrift": {
+    "listed": true,
+    "version": "0.2.2"
+  },
+  "Jaeger.Thrift.VendoredThrift": {
+    "listed": true,
+    "version": "0.2.2"
+  },
+  "Lidgren.Network.Core2": {
     "listed": true,
     "version": "1.0.0"
-  },
-  "Jdenticon-net": {
-    "listed": true,
-    "version": "2.2.0"
-  },
-  "JsonSubTypes": {
-    "listed": true,
-    "version": "1.4.0"
-  },
-  "K4os.Compression.LZ4": {
-    "listed": true,
-    "version": "1.0.2"
-  },
-  "Kdl.NetStandard.x64": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "LiteDB": {
-    "listed": true,
-    "version": "4.0.0"
-  },
-  "LiteDb.Extensions.Caching": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "log4net": {
-    "listed": true,
-    "version": "2.0.9"
   },
   "MathNet.Numerics": {
-    "listed": true,
-    "version": "4.0.0"
-  },
-  "McMaster.Extensions.CommandLineUtils": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "MessagePack": {
-    "listed": true,
-    "version": "1.7.0"
-  },
-  "MessagePack.Annotations": {
-    "listed": true,
-    "version": "2.0.323"
-  },
-  "MessagePipe": {
-    "listed": true,
-    "version": "0.0.1"
+    "version": "5.0.0",
+    "listed": true
   },
   "Meziantou.Analyzer": {
     "listed": true,
     "version": "1.0.349",
     "analyzer": true
   },
-  "Microsoft.AspNetCore.Connections.Abstractions": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "Microsoft.AspNetCore.Http.Connections.Client": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.Http.Connections.Common": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.Http.Features": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.AspNetCore.SignalR.Client": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.SignalR.Client.Core": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.SignalR.Common": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.SignalR.Protocols.Json": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.SignalR.Protocols.MessagePack": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.AspNetCore.SignalR.Protocols.NewtonsoftJson": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "Microsoft.Azure.Kinect.Sensor": {
-    "listed": true,
-    "version": "1.2.0"
-  },
-  "Microsoft.Bcl.AsyncInterfaces": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Microsoft.Bcl.HashCode": {
-    "listed": true,
-    "version": "1.0.0"
-  },
   "Microsoft.CodeAnalysis.Analyzers": {
     "listed": true,
     "version": "3.0.0",
-    "analyzer": true
+    "defineConstraints": [
+      "UNITY_EDITOR"
+    ]
   },
   "Microsoft.CodeAnalysis.BannedApiAnalyzers": {
     "listed": true,
@@ -498,7 +83,7 @@
   },
   "Microsoft.CodeAnalysis.NetAnalyzers": {
     "listed": true,
-    "version": "5.0.3",
+    "version": "[6.0.0,)",
     "analyzer": true
   },
   "Microsoft.CodeAnalysis.PublicApiAnalyzers": {
@@ -509,570 +94,61 @@
   "Microsoft.CSharp": {
     "ignore": true
   },
-  "Microsoft.Data.Sqlite.Core": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.DotNet.PlatformAbstractions": {
-    "listed": true,
-    "version": "3.1.0",
-    "analyzer": true
-  },
-  "Microsoft.EntityFrameworkCore": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.EntityFrameworkCore.Abstractions": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.EntityFrameworkCore.Analyzers": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.EntityFrameworkCore.Proxies": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.EntityFrameworkCore.Relational": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.EntityFrameworkCore.Sqlite": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.EntityFrameworkCore.Sqlite.Core": {
-    "listed": true,
-    "version": "[3.1.0,6.0.0)"
-  },
-  "Microsoft.Extensions.Caching.Abstractions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Caching.Memory": {
-    "listed": true,
-    "version": "2.0.0"
-  },
   "Microsoft.Extensions.Configuration": {
-    "listed": true,
+    "listed": false,
     "version": "2.0.0"
   },
   "Microsoft.Extensions.Configuration.Abstractions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.Binder": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.CommandLine": {
-    "listed": true,
+    "listed": false,
     "version": "2.0.0"
   },
   "Microsoft.Extensions.Configuration.EnvironmentVariables": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.FileExtensions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.Ini": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.Json": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.NewtonsoftJson": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "Microsoft.Extensions.Configuration.UserSecrets": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Configuration.Xml": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.DependencyInjection": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.DependencyInjection.Abstractions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.DependencyModel": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "Microsoft.Extensions.Features": {
-    "listed": true,
-    "version": "6.0.0"
-  },
-  "Microsoft.Extensions.FileProviders.Abstractions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.FileProviders.Composite": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.FileProviders.Physical": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.FileSystemGlobbing": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Hosting": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "Microsoft.Extensions.Hosting.Abstractions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Http": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "Microsoft.Extensions.Http.Polly": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "Microsoft.Extensions.Localization.Abstractions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Logging": {
-    "listed": true,
+    "listed": false,
     "version": "2.0.0"
   },
   "Microsoft.Extensions.Logging.Abstractions": {
-    "listed": true,
+    "listed": false,
     "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Logging.Configuration": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Logging.Console": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Logging.Debug": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Logging.EventLog": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "Microsoft.Extensions.Logging.EventSource": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Logging.Log4Net.AspNetCore": {
-    "listed": true,
-    "version": "2.0.1"
-  },
-  "Microsoft.Extensions.Logging.TraceSource": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.ObjectPool": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Options": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Options.ConfigurationExtensions": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Microsoft.Extensions.Options.DataAnnotations": {
-    "listed": true,
-    "version": "2.2.0"
   },
   "Microsoft.Extensions.Primitives": {
-    "listed": true,
+    "listed": false,
     "version": "2.0.0"
-  },
-  "Microsoft.IdentityModel.Abstractions": {
-    "listed": true,
-    "version": "6.18.0"
-  },
-  "Microsoft.IdentityModel.JsonWebTokens": {
-    "listed": true,
-    "version": "5.3.0"
-  },
-  "Microsoft.IdentityModel.Logging": {
-    "listed": true,
-    "version": "5.3.0"
-  },
-  "Microsoft.IdentityModel.Tokens": {
-    "listed": true,
-    "version": "5.3.0"
-  },
-  "Microsoft.IO.RecyclableMemoryStream": {
-    "listed": true,
-    "version": "1.4.0"
-  },
-  "Microsoft.NET.StringTools": {
-    "listed": true,
-    "version": "[1.0.0]"
-  },
-  "Microsoft.NETCore.Platforms": {
-    "ignore": true
-  },
-  "Microsoft.Toolkit.Mvvm": {
-    "listed": true,
-    "version": "7.0.0",
-    "analyzer": true
   },
   "Microsoft.Unity.Analyzers": {
     "listed": true,
-    "version": "1.7.0",
+    "version": "[1.7.0,)",
     "analyzer": true
-  },
-  "Microsoft.VisualStudio.Threading.Analyzers": {
-    "listed": true,
-    "version": "16.3.13",
-    "analyzer": true
-  },
-  "Microsoft.Win32.Registry": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "MimeTypeMapOfficial": {
-    "listed": true,
-    "version": "1.0.8"
-  },
-  "MongoDB.Bson": {
-    "listed": true,
-    "version": "2.11.0"
-  },
-  "MongoDB.Driver": {
-    "listed": true,
-    "version": "2.11.0"
-  },
-  "MongoDB.Driver.Core": {
-    "listed": true,
-    "version": "2.11.0"
-  },
-  "MongoDB.Driver.GridFS": {
-    "listed": true,
-    "version": "2.11.0"
-  },
-  "MongoDB.Libmongocrypt": {
-    "listed": true,
-    "version": "1.2.0"
-  },
-  "Mono.Cecil": {
-    "listed": true,
-    "version": "0.11.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "MonoMod.Backports": {
-    "listed": true,
-    "version": "1.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "MonoMod.Core": {
-    "listed": true,
-    "version": "1.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "MonoMod.ILHelpers": {
-    "listed": true,
-    "version": "1.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "MonoMod.RuntimeDetour": {
-    "listed": true,
-    "version": "18.11.9.9",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "MonoMod.Utils": {
-    "listed": true,
-    "version": "18.11.9.9",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "Moq": {
-    "listed": true,
-    "version": "4.11.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "morelinq": {
-    "listed": true,
-    "version": "2.7.0"
-  },
-  "NeoSmart.Caching.Sqlite": {
-    "listed": true,
-    "version": "0.1.0"
   },
   "Newtonsoft.Json": {
     "listed": true,
     "version": "11.0.1"
   },
-  "NSubstitute": {
-    "listed": true,
-    "version": "4.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
+  "OpenTracing": {
+    "listed": false,
+    "version": "0.12.0"
   },
-  "NSubstitute.Analyzers.CSharp": {
+  "Poly2Tri.NetStandard2": {
     "listed": true,
-    "version": "1.0.15",
-    "analyzer": true
+    "version": "0.9.0"
   },
-  "NUnit.Analyzers": {
+  "RabbitMQ.Client": {
     "listed": true,
-    "version": "[2.0.0,3.3.0]",
-    "analyzer": true
-  },
-  "Polly": {
-    "listed": true,
-    "version": "6.0.1"
-  },
-  "Polly.Contrib.WaitAndRetry": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Polly.Core": {
-    "listed": true,
-    "version": "8.0.0"
-  },
-  "Polly.Extensions.Http": {
-    "listed": true,
-    "version": "2.0.1"
-  },
-  "Portable.BouncyCastle": {
-    "listed": true,
-    "version": "1.8.1.3"
-  },
-  "Prism.Core": {
-    "listed": true,
-    "version": "7.0.0.362"
-  },
-  "protobuf-net": {
-    "listed": true,
-    "version": "2.3.6"
-  },
-  "protobuf-net.Core": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "protobuf-net.Grpc": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "protobuf-net.Grpc.ClientFactory": {
-    "listed": true,
-    "version": "1.0.177"
-  },
-  "QuikGraph": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "RestSharp": {
-    "listed": true,
-    "version": "106.0.0"
-  },
-  "RestSharp.Serializers.NewtonsoftJson": {
-    "listed": true,
-    "version": "106.10.0"
-  },
-  "RestSharp.Serializers.SystemTextJson": {
-    "listed": true,
-    "version": "106.10.0"
-  },
-  "Rhino3dm": {
-    "listed": true,
-    "version": "0.1.0"
-  },
-  "RichardSzalay.MockHttp": {
-    "listed": true,
-    "version": "5.0.0",
-    "defineConstraints": [
-      "UNITY_EDITOR"
-    ]
-  },
-  "Robots": {
-    "listed": true,
-    "version": "1.1.7"
+    "version": "5.2.0"
   },
   "Roslynator.Analyzers": {
     "listed": true,
-    "version": "1.2.0",
-    "analyzer": true
-  },
-  "Roslynator.CodeAnalysis.Analyzers": {
-    "listed": true,
-    "version": "1.0.0",
+    "version": "[3.3.0,)",
     "analyzer": true
   },
   "Roslynator.Formatting.Analyzers": {
     "listed": true,
-    "version": "1.0.0",
+    "version": "[3.3.0,)",
     "analyzer": true
-  },
-  "Scriban": {
-    "listed": true,
-    "version": "1.2.4"
-  },
-  "Scrutor": {
-    "listed": true,
-    "version": "3.0.1"
-  },
-  "Semver": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "Serialization.NET": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Serilog": {
-    "listed": true,
-    "version": "2.8.0"
-  },
-  "Serilog.Enrichers.Demystifier": {
-    "listed": true,
-    "version": "0.9.0"
-  },
-  "Serilog.Extensions.Hosting": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Serilog.Extensions.Logging": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "Serilog.Formatting.Compact": {
-    "listed": true,
-    "version": "1.1.0"
-  },
-  "Serilog.Settings.Configuration": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "Serilog.Sinks.Async": {
-    "listed": true,
-    "version": "1.4.0"
-  },
-  "Serilog.Sinks.Console": {
-    "listed": true,
-    "version": "4.0.0"
-  },
-  "Serilog.Sinks.Debug": {
-    "listed": true,
-    "version": "1.0.1"
-  },
-  "Serilog.Sinks.File": {
-    "listed": true,
-    "version": "4.1.0"
-  },
-  "Serilog.Sinks.Graylog": {
-    "listed": true,
-    "version": "1.1.89"
-  },
-  "Serilog.Sinks.Trace": {
-    "listed": true,
-    "version": "3.0.0"
-  },
-  "SharpCompress": {
-    "listed": true,
-    "version": "0.19.0"
-  },
-  "SharpYaml": {
-    "listed": true,
-    "version": "1.6.4"
-  },
-  "SharpZipLib": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "SixLabors.ImageSharp": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "Snappier": {
-    "listed": true,
-    "version": "1.0.0"
   },
   "SonarAnalyzer.CSharp": {
     "listed": true,
-    "version": "8.30.0.37606",
+    "version": "9.0.0.68202",
     "analyzer": true
-  },
-  "Sovran.NET": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "SQLitePCLRaw.bundle_e_sqlite3": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "SQLitePCLRaw.bundle_green": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "SQLitePCLRaw.core": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "SQLitePCLRaw.lib.e_sqlite3": {
-    "listed": true,
-    "version": "2.0.0"
-  },
-  "SQLitePCLRaw.provider.e_sqlite3": {
-    "listed": true,
-    "version": "2.1.0"
-  },
-  "SSH.NET": {
-    "listed": true,
-    "version": "2020.0.0"
-  },
-  "SshNet.Security.Cryptography": {
-    "listed": true,
-    "version": "1.3.0"
-  },
-  "Stateless": {
-    "listed": true,
-    "version": "4.3.0"
-  },
-  "StrongInject": {
-    "listed": true,
-    "version": "1.0.0",
-    "analyzer": true
-  },
-  "StrongInject.Extensions.DependencyInjection": {
-    "listed": true,
-    "version": "1.4.1"
   },
   "System.Buffers": {
     "listed": true,
@@ -1082,55 +158,7 @@
     "listed": true,
     "version": "1.4.0"
   },
-  "System.ComponentModel.Annotations": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Configuration.ConfigurationManager": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Diagnostics.DiagnosticSource": {
-    "listed": true,
-    "version": "4.5.0"
-  },
-  "System.Diagnostics.EventLog": {
-    "listed": true,
-    "version": "4.5.0"
-  },
-  "System.Formats.Asn1": {
-    "listed": true,
-    "version": "5.0.0"
-  },
-  "System.IdentityModel.Tokens.Jwt": {
-    "listed": true,
-    "version": "5.3.0"
-  },
-  "System.Interactive.Async": {
-    "listed": true,
-    "version": "3.2.0"
-  },
-  "System.IO.Abstractions": {
-    "listed": true,
-    "version": "2.1.0.201"
-  },
-  "System.IO.FileSystem.AccessControl": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.IO.Pipelines": {
-    "listed": true,
-    "version": "4.5.0"
-  },
-  "System.Linq.Async": {
-    "listed": true,
-    "version": "4.0.0"
-  },
   "System.Memory": {
-    "listed": true,
-    "version": "4.5.0"
-  },
-  "System.Net.Http.WinHttpHandler": {
     "listed": true,
     "version": "4.4.0"
   },
@@ -1138,157 +166,41 @@
     "listed": false,
     "version": "4.4.0"
   },
-  "System.Private.ServiceModel": {
-    "listed": false,
-    "version": "4.6.0"
-  },
-  "System.Reflection.DispatchProxy": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Reflection.Emit": {
-    "listed": true,
-    "version": "4.6.0"
-  },
-  "System.Reflection.Emit.ILGeneration": {
-    "listed": true,
-    "version": "4.6.0"
-  },
-  "System.Reflection.Emit.Lightweight": {
-    "listed": true,
-    "version": "4.6.0"
-  },
-  "System.Reflection.Metadata": {
+  "System.Reflection.Metadata": { 
     "listed": true,
     "version": "1.5.0"
-  },
-  "System.Reflection.TypeExtensions": {
-    "listed": true,
-    "version": "4.4.0"
   },
   "System.Runtime.CompilerServices.Unsafe": {
     "listed": true,
     "version": "4.4.0"
   },
-  "System.Security.AccessControl": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Security.Cryptography.Cng": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Security.Cryptography.Pkcs": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Security.Cryptography.ProtectedData": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Security.Cryptography.Xml": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Security.Permissions": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Security.Principal.Windows": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.ServiceModel.Primitives": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.ServiceModel.Syndication": {
-    "listed": true,
-    "version": "4.5.0"
-  },
   "System.Text.Encoding.CodePages": {
     "listed": false,
     "version": "4.4.0"
-  },
-  "System.Text.Encodings.Web": {
-    "listed": true,
-    "version": "4.4.0"
-  },
-  "System.Text.Json": {
-    "listed": true,
-    "version": "4.6.0"
   },
   "System.Threading.Channels": {
     "listed": true,
     "version": "4.5.0"
   },
-  "System.Threading.RateLimiting": {
-    "listed": true,
-    "version": "7.0.0"
-  },
   "System.Threading.Tasks.Extensions": {
     "listed": false,
     "version": "4.4.0"
   },
-  "Telnet": {
+  "Trackman.Unity.Analyzers": {
     "listed": true,
-    "version": "0.8.6"
-  },
-  "TestableIO.System.IO.Abstractions": {
-    "listed": true,
-    "version": "17.2.26"
-  },
-  "TestableIO.System.IO.Abstractions.Wrappers": {
-    "listed": true,
-    "version": "17.2.26"
-  },
-  "UniRxAnalyzer": {
-    "listed": true,
-    "version": "1.0.4.1",
+    "version": "[1.0.0,)",
     "analyzer": true
   },
-  "UnitsNet": {
+  "TrackMan.SharedCalculator": {
     "listed": true,
-    "version": "4.0.0"
+    "version": "6.167.0"
   },
-  "UnitsNet.NumberExtensions": {
-    "listed": true,
-    "version": "4.44.0"
-  },
-  "UnitsNet.Serialization.JsonNet": {
-    "listed": true,
-    "version": "4.0.0"
-  },
-  "Validation": {
-    "listed": true,
-    "version": "2.5.42"
-  },
-  "VoltRpc": {
+  "Unity3D.Interpolate.NetStandard2": {
     "listed": true,
     "version": "1.0.0"
   },
-  "VoltRpc.Communication.Pipes": {
+  "WebSocketSharp-netstandard": {
     "listed": true,
-    "version": "1.0.0"
-  },
-  "VoltRpc.Extension.Memory": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "VoltRpc.Extension.Vectors": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "WebDav.Client": {
-    "listed": true,
-    "version": "2.3.0"
-  },
-  "Websocketsharp.core": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "ZstdSharp.Port": {
-    "listed": true,
-    "version": "0.5.0"
+    "version": "1.0.1"
   }
 }
