@@ -44,6 +44,8 @@ namespace UnityNuGet
         private readonly RegistryTargetFramework[] _targetFrameworks;
         private readonly ILogger _logger;
         private readonly ISettings _settings;
+        private readonly PackageSourceMapping _sourceMapping;
+        private readonly SourceRepositoryProvider _sourceRepositoryProvider;
         private readonly IEnumerable<SourceRepository> _sourceRepositories;
         private readonly SourceCacheContext _sourceCacheContext;
         private readonly Registry _registry;
@@ -76,8 +78,10 @@ namespace UnityNuGet
             }
 
             _settings = Settings.LoadDefaultSettings(root: null);
-            var sourceRepositoryProvider = new SourceRepositoryProvider(new PackageSourceProvider(_settings), Repository.Provider.GetCoreV3());
-            _sourceRepositories = sourceRepositoryProvider.GetRepositories();
+            _sourceMapping = PackageSourceMapping.GetPackageSourceMapping(_settings);
+
+            _sourceRepositoryProvider = new SourceRepositoryProvider(new PackageSourceProvider(_settings), Repository.Provider.GetCoreV3());
+            _sourceRepositories = _sourceRepositoryProvider.GetRepositories();
             _logger = logger;
             _registry = Registry.GetInstance();
 
@@ -140,6 +144,12 @@ namespace UnityNuGet
             return package;
         }
 
+        public SourceRepository GetRepositoryByPackageId(string packageId)
+        {
+            var sourceName = _sourceMapping.GetConfiguredPackageSources(packageId)[0];
+            return _sourceRepositories.First(x => x.PackageSource.Name == sourceName);
+        }
+
         /// <summary>
         /// Gets the path for the specified package file to download
         /// </summary>
@@ -170,16 +180,15 @@ namespace UnityNuGet
 
         private async Task<IEnumerable<IPackageSearchMetadata>?> GetMetadataFromSources(string packageName)
         {
-            foreach (var source in _sourceRepositories)
+            var source = GetRepositoryByPackageId(packageName);
+
+            var packageMetadataResource = source.GetResource<PackageMetadataResource>();
+
+            var result = await packageMetadataResource.GetMetadataAsync(packageName, includePrerelease: false, includeUnlisted: false, _sourceCacheContext, _logger, CancellationToken.None);
+
+            if (result.Any())
             {
-                var packageMetadataResource = source.GetResource<PackageMetadataResource>();
-
-                var result = await packageMetadataResource.GetMetadataAsync(packageName, includePrerelease: false, includeUnlisted: false, _sourceCacheContext, _logger, CancellationToken.None);
-
-                if (result.Any())
-                {
-                    return result;
-                }
+                return result;
             }
 
             return null;
@@ -190,7 +199,7 @@ namespace UnityNuGet
             return await PackageDownloader.GetDownloadResourceResultAsync(
                 _sourceRepositories,
                 packageIdentity,
-                new PackageDownloadContext(_sourceCacheContext),
+                new PackageDownloadContext(_sourceCacheContext, null, false, _sourceMapping),
                 SettingsUtility.GetGlobalPackagesFolder(_settings),
                 _logger, CancellationToken.None);
         }
