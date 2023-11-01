@@ -5,7 +5,7 @@
   },
   "Clipper2": {
     "listed": true,
-    "version": "1.2.3"
+    "version": "[1.0.0,)"
   },
   "ErrorProne.NET.CoreAnalyzers": {
     "listed": true,
