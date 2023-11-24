@@ -106,6 +106,10 @@
     "listed": false,
     "version": "2.0.0"
   },
+  "Microsoft.Extensions.DependencyInjection.Abstractions": {
+    "listed": false,
+    "version": "2.0.0"
+  },
   "Microsoft.Extensions.Logging.Abstractions": {
     "listed": false,
     "version": "2.0.0"
