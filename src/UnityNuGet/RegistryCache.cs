@@ -344,7 +344,7 @@ namespace UnityNuGet
                         Name = npmPackageId,
                         Description = packageMeta.Description,
                         Author = "NuGet",
-                        DisplayName = packageMeta.Title + $"({npmPackageInfo.Author})"
+                        DisplayName = packageMeta.Title + $" ({npmPackageInfo.Author})"
                     };
                     npmVersion.Distribution.Tarball = new Uri(_rootHttpUri, $"{npmPackage.Id}/-/{GetUnityPackageFileName(packageIdentity, npmVersion)}");
                     npmVersion.Unity = _minimumUnityVersion;
