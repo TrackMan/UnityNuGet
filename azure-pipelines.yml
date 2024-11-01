@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: '408a6f09-68d4-43cb-8155-ae1316d97331'
+  dockerRegistryServiceConnection: 'd61fa10a-3cd7-43b2-8d3a-dd9768dea8d7'
   imageRepository: 'perfectparallelunitynuget'
   containerRegistry: 'tmgolf.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'

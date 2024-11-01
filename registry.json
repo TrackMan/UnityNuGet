@@ -166,6 +166,10 @@
     "listed": true,
     "version": "1.4.0"
   },
+  "System.Diagnostics.DiagnosticSource": {
+    "listed": true,
+    "version": "[8.0.2,)"
+  },
   "System.Memory": {
     "listed": true,
     "version": "4.4.0"
