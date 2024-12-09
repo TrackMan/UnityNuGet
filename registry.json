@@ -170,6 +170,10 @@
     "listed": true,
     "version": "[8.0.2,)"
   },
+  "System.IO.Pipelines": {
+    "listed": true,
+    "version": "[8.0.0,)"
+  },
   "System.Memory": {
     "listed": true,
     "version": "4.4.0"
@@ -178,7 +182,7 @@
     "listed": false,
     "version": "4.4.0"
   },
-  "System.Reflection.Metadata": { 
+  "System.Reflection.Metadata": {
     "listed": true,
     "version": "1.5.0"
   },
@@ -193,6 +197,10 @@
   "System.Threading.Channels": {
     "listed": true,
     "version": "4.5.0"
+  },
+  "System.Threading.RateLimiting": {
+    "listed": true,
+    "version": "8.0.0"
   },
   "System.Threading.Tasks.Extensions": {
     "listed": false,
