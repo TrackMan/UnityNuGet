@@ -1,4 +1,20 @@
 {
+  "Microsoft.TeamFoundation.DistributedTask.Common.Contracts": {
+    "listed": true,
+    "version": "19.225.1"
+  },
+  "System.ComponentModel.Annotations": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "Azure.Identity": {
+    "listed": true,
+    "version": "[1.16.0,)"
+  },
+  "Azure.Core": {
+    "listed": true,
+    "version": "[1.47.3,)"
+  },
   "clipper.NetStandard2": {
     "listed": true,
     "version": "6.4.2"
@@ -55,13 +71,17 @@
     "version": "1.0.349",
     "analyzer": true
   },
+  "Microsoft.Win32.Registry": {
+    "listed": false,
+    "version": "4.7.0"
+  },
   "Microsoft.Bcl.AsyncInterfaces": {
     "listed": false,
     "version": "6.0.0"
   },
   "Microsoft.CodeAnalysis.Analyzers": {
     "listed": true,
-    "version": "3.0.0",
+    "version": "2.9.3",
     "defineConstraints": [
       "UNITY_EDITOR"
     ]
@@ -122,14 +142,54 @@
     "listed": false,
     "version": "2.0.0"
   },
+  "Microsoft.Identity.Client.Extensions.Msal": {
+    "listed": true,
+    "version": "[4.76.0,)"
+  },
+  "Microsoft.Identity.Extensions.Msal": {
+    "listed": true,
+    "version": "[4.76.0,)"
+  },
+  "Microsoft.Identity.Client": {
+    "listed": true,
+    "version": "[4.76.0,)"
+  },
+  "Microsoft.IdentityModel.Abstractions": {
+    "listed": true,
+    "version": "[6.35.0,)"
+  },
+  "Microsoft.Identity.Extensions.Msal": {
+    "listed": true,
+    "version": "[4.76.0,)"
+  },
+  "Microsoft.TeamFoundationServer.Client": {
+    "listed": true,
+    "version": "19.225.1"
+  },
+  "Microsoft.VisualStudio.Services.Client": {
+    "listed": true,
+    "version": "19.225.1"
+  },
+  "Microsoft.AspNet.WebApi.Client": {
+    "listed": true,
+    "version": "5.2.7"
+  },
   "Microsoft.Unity.Analyzers": {
     "listed": true,
     "version": "[1.7.0,)",
     "analyzer": true
   },
+  "Microsoft.TeamFoundationServer.Client": {
+    "listed": true,
+    "version": "16.170.0",
+  },
   "Newtonsoft.Json": {
     "listed": true,
-    "version": "11.0.1"
+    "version": "10.0.1"
+  },
+  "Newtonsoft.Json.Bson": {
+    "listed": true,
+    "version": "1.0.1"
   },
   "OpenTracing": {
     "listed": false,
@@ -162,21 +222,80 @@
     "listed": true,
     "version": "4.4.0"
   },
+  "System.ClientModel": {
+    "listed": true,
+    "version": "[1.6.1,)"
+  },
   "System.Collections.Immutable": {
     "listed": true,
     "version": "1.4.0"
   },
+  "System.Configuration.ConfigurationManager": {
+    "listed": true,
+    "version": "6.0.1"
+  },
   "System.Diagnostics.DiagnosticSource": {
     "listed": true,
-    "version": "[8.0.2,)"
+    "version": "[4.7.0,)"
   },
   "System.IO.Pipelines": {
     "listed": true,
     "version": "[8.0.0,)"
   },
+  "System.IO.FileSystem.AccessControl": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "System.Security.AccessControl": {
+    "listed": true,
+    "version": "4.7.0"
+  },
+  "System.Security.Permissions": {
+    "listed": true,
+    "version": "6.0.0"
+  },
+  "System.Security.Cryptography.Cng": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "System.Security.Cryptography.OpenSsl": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "System.Security.Cryptography.ProtectedData": {
+    "listed": true,
+    "version": "6.0.0"
+  },
+  "System.Security.Principal.Windows": {
+    "listed": true,
+    "version": "4.7.0"
+  },
+  "System.Xml.XPath.XmlDocument": {
+    "listed": true,
+    "version": "4.3.0"
+  },
+  "System.Data.SqlClient": {
+    "listed": true,
+    "version": "4.8.5"
+  },
+  "runtime.native.System.Data.SqlClient.sni": {
+    "ignore": true
+  },
+  "System.Security.Principal.Windows": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "System.Security.Cryptography.ProtectedData": {
+    "listed": true,
+    "version": "4.5.0"
+  },
   "System.Memory": {
     "listed": true,
     "version": "4.4.0"
+  },
+  "System.Memory.Data": {
+    "listed": true,
+    "version": "8.0.0"
   },
   "System.Numerics.Vectors": {
     "listed": false,
@@ -193,6 +312,18 @@
   "System.Text.Encoding.CodePages": {
     "listed": false,
     "version": "4.4.0"
+  },
+  "System.Text.Encodings.Web": {
+    "listed": false,
+    "version": "[8.0.0,)"
+  },
+  "System.Text.Json": {
+    "listed": false,
+    "version": "8.0.0"
+  },
+  "System.Text.Encoding.Web": {
+    "listed": false,
+    "version": "8.0.0"
   },
   "System.Threading.Channels": {
     "listed": true,
