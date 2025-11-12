@@ -238,6 +238,10 @@
     "listed": true,
     "version": "[4.7.0,)"
   },
+  "System.Formats.Asn1": {
+    "listed": true,
+    "version": "9.0.8"
+  },
   "System.IO.Pipelines": {
     "listed": true,
     "version": "[8.0.0,)"
