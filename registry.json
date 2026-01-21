@@ -199,6 +199,14 @@
     "listed": true,
     "version": "0.9.0"
   },
+  "Primitively.Trackman": {
+    "listed": true,
+    "version": "1.4.22.4"
+  },
+  "Primitively.Trackman.Abstractions": {
+    "listed": true,
+    "version": "1.4.22.4"
+  },
   "RabbitMQ.Client": {
     "listed": true,
     "version": "5.2.0"
