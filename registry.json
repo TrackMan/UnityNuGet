@@ -68,7 +68,7 @@
   },
   "Meziantou.Analyzer": {
     "listed": true,
-    "version": "1.0.349",
+    "version": "2.0.283",
     "analyzer": true
   },
   "Microsoft.Win32.Registry": {
@@ -201,6 +201,7 @@
   },
   "Primitively.Trackman": {
     "listed": true,
+    "analyzer": true,
     "version": "1.4.22.4"
   },
   "Primitively.Trackman.Abstractions": {
