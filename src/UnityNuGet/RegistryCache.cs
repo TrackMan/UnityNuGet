@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
@@ -14,6 +14,7 @@ using ICSharpCode.SharpZipLib.Tar;
 using Newtonsoft.Json;
 using NuGet.Common;
 using NuGet.Configuration;
+using NuGet.Credentials;
 using NuGet.Frameworks;
 using NuGet.PackageManagement;
 using NuGet.Packaging;
@@ -56,6 +57,9 @@ namespace UnityNuGet
         public RegistryCache(string rootPersistentFolder, Uri rootHttpUri, string unityScope, string minimumUnityVersion,
             string packageNameNuGetPostFix, RegistryTargetFramework[] targetFrameworks, ILogger logger)
         {
+            // Initialize credential service ONCE at app startup
+            DefaultCredentialServiceUtility.SetupDefaultCredentialService(logger, nonInteractive: true);
+
             _rootPersistentFolder = rootPersistentFolder ?? throw new ArgumentNullException(nameof(rootPersistentFolder));
             _rootHttpUri = rootHttpUri ?? throw new ArgumentNullException(nameof(rootHttpUri));
             _unityScope = unityScope ?? throw new ArgumentNullException(nameof(unityScope));
