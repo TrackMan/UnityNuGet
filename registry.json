@@ -134,6 +134,22 @@
     "listed": false,
     "version": "2.0.0"
   },
+  "Microsoft.Extensions.Hosting.Abstractions": {
+    "listed": true,
+    "version": "[9.0.5,)"
+  },
+  "Microsoft.Extensions.Diagnostics.Abstractions": {
+    "listed": true,
+    "version": "[9.0.5,)"
+  },
+  "Microsoft.Extensions.FileProviders.Abstractions": {
+    "listed": true,
+    "version": "[9.0.5,)"
+  },
+  "Microsoft.Extensions.Options": {
+    "listed": true,
+    "version": "[9.0.5,)"
+  },
   "Microsoft.Extensions.Logging.Abstractions": {
     "listed": false,
     "version": "2.0.0"
