@@ -582,7 +582,10 @@ namespace UnityNuGet
 
                     if (!packageEntry.Analyzer && collectedItems.Count == 0)
                     {
-                        throw new InvalidOperationException($"The package does not contain a compatible .NET assembly {string.Join(",", _targetFrameworks.Select(x => x.Name))}");
+                        LogWarning(
+                            $"Skipping package `{identity}` because it does not contain a compatible .NET assembly " +
+                            $"for {string.Join(",", _targetFrameworks.Select(x => x.Name))}.");
+                        return;
                     }
 
                     var isPackageNetStandard21Assembly = DotNetHelper.IsNetStandard21Assembly(identity.Id);
@@ -828,7 +831,10 @@ namespace UnityNuGet
 
                     if (!packageEntry.Analyzer && collectedItems.Count == 0)
                     {
-                        throw new InvalidOperationException($"The package does not contain a compatible .NET assembly {string.Join(",", _targetFrameworks.Select(x => x.Name))}");
+                        LogWarning(
+                            $"Skipping package `{identity}` because it does not contain a compatible .NET assembly " +
+                            $"for {string.Join(",", _targetFrameworks.Select(x => x.Name))}.");
+                        return;
                     }
 
                     // Write the native libraries
