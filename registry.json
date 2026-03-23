@@ -396,27 +396,21 @@
     "version": "4.10.0"
   },
   "TrackMan.SharedCalculator.runtime.linux-arm64": {
-    "listed": true,
-    "version": "9.112.0"
+    "ignore": true
   },
   "TrackMan.SharedCalculator.runtime.linux-x64": {
-    "listed": true,
-    "version": "9.112.0"
+    "ignore": true
   },
   "TrackMan.SharedCalculator.runtime.osx-arm64": {
-    "listed": true,
-    "version": "9.112.0"
+    "ignore": true
   },
   "TrackMan.SharedCalculator.runtime.osx-x64": {
-    "listed": true,
-    "version": "9.112.0"
+    "ignore": true
   },
   "TrackMan.SharedCalculator.runtime.win-arm64": {
-    "listed": true,
-    "version": "9.112.0"
+    "ignore": true
   },
   "TrackMan.SharedCalculator.runtime.win-x64": {
-    "listed": true,
-    "version": "9.112.0"
+    "ignore": true
   }
 }

@@ -436,18 +436,7 @@ namespace UnityNuGet
                     // If we don't have any dependencies error, generate the package
                     if (!hasDependencyErrors)
                     {
-                        bool packageAvailable = await ConvertNuGetToUnityPackageIfDoesNotExist(packageIdentity, npmPackageInfo, npmVersion, packageMeta, forceUpdate, packageEntry);
-
-                        if (!packageAvailable)
-                        {
-                            npmPackage.Versions.Remove(npmVersion.Version);
-
-                            if (npmPackageInfo.Versions.TryGetValue(npmCurrentVersion, out var tagValue) && tagValue == "latest")
-                                npmPackageInfo.Versions.Remove(npmCurrentVersion);
-
-                            continue;
-                        }
-
+                        bool packageConverted = await ConvertNuGetToUnityPackageIfDoesNotExist(packageIdentity, npmPackageInfo, npmVersion, packageMeta, forceUpdate, packageEntry);
                         npmPackage.Time[npmCurrentVersion] = packageMeta.Published?.UtcDateTime ?? GetUnityPackageFileInfo(packageIdentity, npmVersion).CreationTimeUtc;
 
                         // Copy repository info if necessary
@@ -459,7 +448,7 @@ namespace UnityNuGet
                         // Update the cache entry
                         await WritePackageCacheEntry(packageId, cacheEntry);
 
-                        if (packageAvailable && IsRunningOnAzure)
+                        if (packageConverted && IsRunningOnAzure)
                         {
                             string localPackagePath = Path.Combine(globalPackagesFolder, packageIdentity.Id.ToLowerInvariant(), packageIdentity.Version.ToString());
 
@@ -514,18 +503,22 @@ namespace UnityNuGet
 
             if (!IsUnityPackageValid(identity, npmPackageVersion) || !IsUnityPackageSha1Valid(identity, npmPackageVersion))
             {
-                return await ConvertNuGetPackageToUnity(identity, npmPackageInfo, npmPackageVersion, packageMeta, packageEntry);
+                await ConvertNuGetPackageToUnity(identity, npmPackageInfo, npmPackageVersion, packageMeta, packageEntry);
+
+                return true;
             }
+            else
+            {
+                npmPackageVersion.Distribution.Shasum = await ReadUnityPackageSha1(identity, npmPackageVersion);
 
-            npmPackageVersion.Distribution.Shasum = await ReadUnityPackageSha1(identity, npmPackageVersion);
-
-            return true;
+                return false;
+            }
         }
 
         /// <summary>
         /// Converts a NuGet package to a Unity package.
         /// </summary>
-        private async Task<bool> ConvertNuGetPackageToUnity
+        private async Task ConvertNuGetPackageToUnity
         (
             PackageIdentity identity,
             NpmPackageInfo npmPackageInfo,
@@ -563,31 +556,6 @@ namespace UnityNuGet
             {
                 using var memStream = new MemoryStream();
 
-                // Select the framework version that is the closest or equal to the latest configured framework version
-                var versions = await packageReader.GetLibItemsAsync(CancellationToken.None);
-
-                var closestVersions = NuGetHelper.GetClosestFrameworkSpecificGroups(versions, _targetFrameworks);
-
-                var collectedItems = new Dictionary<FrameworkSpecificGroup, HashSet<RegistryTargetFramework>>();
-
-                foreach (var (item, targetFramework) in closestVersions)
-                {
-                    if (!collectedItems.TryGetValue(item, out var frameworksPerGroup))
-                    {
-                        frameworksPerGroup = new HashSet<RegistryTargetFramework>();
-                        collectedItems.Add(item, frameworksPerGroup);
-                    }
-                    frameworksPerGroup.Add(targetFramework);
-                }
-
-                if (!packageEntry.Analyzer && collectedItems.Count == 0)
-                {
-                    LogWarning(
-                        $"Skipping package `{identity}` because it does not contain a compatible .NET assembly " +
-                        $"for {string.Join(",", _targetFrameworks.Select(x => x.Name))}.");
-                    return false;
-                }
-
                 using (var outStream = File.Create(unityPackageFilePath))
                 using (var gzoStream = new GZipOutputStream(outStream)
                 {
@@ -595,6 +563,28 @@ namespace UnityNuGet
                 })
                 using (var tarArchive = new TarOutputStream(gzoStream, Encoding.UTF8))
                 {
+                    // Select the framework version that is the closest or equal to the latest configured framework version
+                    var versions = await packageReader.GetLibItemsAsync(CancellationToken.None);
+
+                    var closestVersions = NuGetHelper.GetClosestFrameworkSpecificGroups(versions, _targetFrameworks);
+
+                    var collectedItems = new Dictionary<FrameworkSpecificGroup, HashSet<RegistryTargetFramework>>();
+
+                    foreach (var (item, targetFramework) in closestVersions)
+                    {
+                        if (!collectedItems.TryGetValue(item, out var frameworksPerGroup))
+                        {
+                            frameworksPerGroup = new HashSet<RegistryTargetFramework>();
+                            collectedItems.Add(item, frameworksPerGroup);
+                        }
+                        frameworksPerGroup.Add(targetFramework);
+                    }
+
+                    if (!packageEntry.Analyzer && collectedItems.Count == 0)
+                    {
+                        throw new InvalidOperationException($"The package does not contain a compatible .NET assembly {string.Join(",", _targetFrameworks.Select(x => x.Name))}");
+                    }
+
                     var isPackageNetStandard21Assembly = DotNetHelper.IsNetStandard21Assembly(identity.Id);
                     var hasMultiNetStandard = collectedItems.Count > 1;
                     var hasOnlyNetStandard21 = collectedItems.Count == 1 && collectedItems.Values.First().All(x => x.Name == "netstandard2.1");
@@ -838,10 +828,7 @@ namespace UnityNuGet
 
                     if (!packageEntry.Analyzer && collectedItems.Count == 0)
                     {
-                        LogWarning(
-                            $"Skipping package `{identity}` because it does not contain a compatible .NET assembly " +
-                            $"for {string.Join(",", _targetFrameworks.Select(x => x.Name))}.");
-                        return false;
+                        throw new InvalidOperationException($"The package does not contain a compatible .NET assembly {string.Join(",", _targetFrameworks.Select(x => x.Name))}");
                     }
 
                     // Write the native libraries
@@ -912,7 +899,6 @@ namespace UnityNuGet
                             // Try to fetch the license from an URL
                             using (var httpClient = new HttpClient())
                             {
-                                httpClient.Timeout = TimeSpan.FromSeconds(15);
                                 licenseUrlText = await httpClient.GetStringAsync(licenseUrl);
                             }
 
@@ -977,10 +963,7 @@ namespace UnityNuGet
                 }
 
                 LogWarning($"Error while processing package `{identity}`. Reason: {ex}");
-                return false;
             }
-
-            return true;
         }
 
         private static Guid GetStableGuid(PackageIdentity identity, string name)
