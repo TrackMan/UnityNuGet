@@ -9,7 +9,7 @@
   },
   "Azure.Identity": {
     "listed": true,
-    "version": "[1.16.0,)"
+    "version": "[1.16.0]"
   },
   "Azure.Core": {
     "listed": true,
@@ -184,7 +184,7 @@
   },
   "Microsoft.VisualStudio.Services.Client": {
     "listed": true,
-    "version": "19.225.1"
+    "version": "[19.225.1]"
   },
   "Microsoft.AspNet.WebApi.Client": {
     "listed": true,
@@ -382,18 +382,6 @@
   "WebSocketSharp-netstandard": {
     "listed": true,
     "version": "1.0.1"
-  },
-  "Microsoft.Data.SqlClient": {
-    "listed": true,
-    "version": "6.1.2"
-  },
-  "System.Security.Cryptography.Pkcs": {
-    "listed": true,
-    "version": "9.0.10"
-  },
-  "System.ServiceModel.Primitives": {
-    "listed": true,
-    "version": "4.10.0"
   },
   "TrackMan.SharedCalculator.runtime.linux-arm64": {
     "ignore": true
