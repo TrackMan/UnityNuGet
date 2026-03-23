@@ -382,5 +382,17 @@
   "WebSocketSharp-netstandard": {
     "listed": true,
     "version": "1.0.1"
+  },
+  "Microsoft.Data.SqlClient": {
+    "listed": true,
+    "version": "6.1.2"
+  },
+  "System.Security.Cryptography.Pkcs": {
+    "listed": true,
+    "version": "9.0.10"
+  },
+  "System.ServiceModel.Primitives": {
+    "listed": true,
+    "version": "4.10.0"
   }
 }
