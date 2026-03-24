@@ -9,7 +9,7 @@
   },
   "Azure.Identity": {
     "listed": true,
-    "version": "[1.16.0]"
+    "version": "[1.17.0]"
   },
   "Azure.Core": {
     "listed": true,
