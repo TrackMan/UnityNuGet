@@ -1,19 +1,11 @@
 {
-  "Microsoft.TeamFoundation.DistributedTask.Common.Contracts": {
+  "Azure.Core": {
     "listed": true,
-    "version": "19.225.1"
-  },
-  "System.ComponentModel.Annotations": {
-    "listed": true,
-    "version": "5.0.0"
+    "version": "[1.47.3,)"
   },
   "Azure.Identity": {
     "listed": true,
     "version": "[1.17.0]"
-  },
-  "Azure.Core": {
-    "listed": true,
-    "version": "[1.47.3,)"
   },
   "clipper.NetStandard2": {
     "listed": true,
@@ -32,6 +24,10 @@
     "listed": true,
     "version": "1.1.0",
     "analyzer": true
+  },
+  "Google.FlatBuffers": {
+    "listed": true,
+    "version": "22.9.24"
   },
   "I18Next.Net": {
     "listed": true,
@@ -71,9 +67,9 @@
     "version": "2.0.283",
     "analyzer": true
   },
-  "Microsoft.Win32.Registry": {
-    "listed": false,
-    "version": "4.7.0"
+  "Microsoft.AspNet.WebApi.Client": {
+    "listed": true,
+    "version": "5.2.7"
   },
   "Microsoft.Bcl.AsyncInterfaces": {
     "listed": false,
@@ -134,10 +130,6 @@
     "listed": false,
     "version": "2.0.0"
   },
-  "Microsoft.Extensions.Hosting.Abstractions": {
-    "listed": true,
-    "version": "[9.0.5,)"
-  },
   "Microsoft.Extensions.Diagnostics.Abstractions": {
     "listed": true,
     "version": "[9.0.5,)"
@@ -146,7 +138,7 @@
     "listed": true,
     "version": "[9.0.5,)"
   },
-  "Microsoft.Extensions.Options": {
+  "Microsoft.Extensions.Hosting.Abstractions": {
     "listed": true,
     "version": "[9.0.5,)"
   },
@@ -154,9 +146,17 @@
     "listed": false,
     "version": "2.0.0"
   },
+  "Microsoft.Extensions.Options": {
+    "listed": true,
+    "version": "[9.0.5,)"
+  },
   "Microsoft.Extensions.Primitives": {
     "listed": false,
     "version": "2.0.0"
+  },
+  "Microsoft.Identity.Client": {
+    "listed": true,
+    "version": "[4.76.0,)"
   },
   "Microsoft.Identity.Client.Extensions.Msal": {
     "listed": true,
@@ -166,38 +166,30 @@
     "listed": true,
     "version": "[4.76.0,)"
   },
-  "Microsoft.Identity.Client": {
-    "listed": true,
-    "version": "[4.76.0,)"
-  },
   "Microsoft.IdentityModel.Abstractions": {
     "listed": true,
     "version": "[6.35.0,)"
   },
-  "Microsoft.Identity.Extensions.Msal": {
-    "listed": true,
-    "version": "[4.76.0,)"
-  },
-  "Microsoft.TeamFoundationServer.Client": {
+  "Microsoft.TeamFoundation.DistributedTask.Common.Contracts": {
     "listed": true,
     "version": "19.225.1"
   },
-  "Microsoft.VisualStudio.Services.Client": {
+  "Microsoft.TeamFoundationServer.Client": {
     "listed": true,
-    "version": "[19.225.1]"
-  },
-  "Microsoft.AspNet.WebApi.Client": {
-    "listed": true,
-    "version": "5.2.7"
+    "version": "16.170.0"
   },
   "Microsoft.Unity.Analyzers": {
     "listed": true,
     "version": "[1.7.0,)",
     "analyzer": true
   },
-  "Microsoft.TeamFoundationServer.Client": {
+  "Microsoft.VisualStudio.Services.Client": {
     "listed": true,
-    "version": "16.170.0",
+    "version": "[19.225.1]"
+  },
+  "Microsoft.Win32.Registry": {
+    "listed": false,
+    "version": "4.7.0"
   },
   "Newtonsoft.Json": {
     "listed": true,
@@ -210,6 +202,10 @@
   "OpenTracing": {
     "listed": false,
     "version": "0.12.0"
+  },
+  "PhysicsWorldLoader": {
+    "listed": true,
+    "version": "[0.1.2,)"
   },
   "Poly2Tri.NetStandard2": {
     "listed": true,
@@ -238,6 +234,9 @@
     "version": "[3.3.0,)",
     "analyzer": true
   },
+  "runtime.native.System.Data.SqlClient.sni": {
+    "ignore": true
+  },
   "SonarAnalyzer.CSharp": {
     "listed": true,
     "version": "9.0.0.68202",
@@ -255,9 +254,17 @@
     "listed": true,
     "version": "1.4.0"
   },
+  "System.ComponentModel.Annotations": {
+    "listed": true,
+    "version": "5.0.0"
+  },
   "System.Configuration.ConfigurationManager": {
     "listed": true,
     "version": "6.0.1"
+  },
+  "System.Data.SqlClient": {
+    "listed": true,
+    "version": "4.8.5"
   },
   "System.Diagnostics.DiagnosticSource": {
     "listed": true,
@@ -267,56 +274,13 @@
     "listed": true,
     "version": "9.0.8"
   },
-  "System.IO.Pipelines": {
-    "listed": true,
-    "version": "[8.0.0,)"
-  },
   "System.IO.FileSystem.AccessControl": {
     "listed": true,
     "version": "5.0.0"
   },
-  "System.Security.AccessControl": {
+  "System.IO.Pipelines": {
     "listed": true,
-    "version": "4.7.0"
-  },
-  "System.Security.Permissions": {
-    "listed": true,
-    "version": "6.0.0"
-  },
-  "System.Security.Cryptography.Cng": {
-    "listed": true,
-    "version": "5.0.0"
-  },
-  "System.Security.Cryptography.OpenSsl": {
-    "listed": true,
-    "version": "5.0.0"
-  },
-  "System.Security.Cryptography.ProtectedData": {
-    "listed": true,
-    "version": "6.0.0"
-  },
-  "System.Security.Principal.Windows": {
-    "listed": true,
-    "version": "4.7.0"
-  },
-  "System.Xml.XPath.XmlDocument": {
-    "listed": true,
-    "version": "[4.3.0,)"
-  },
-  "System.Data.SqlClient": {
-    "listed": true,
-    "version": "4.8.5"
-  },
-  "runtime.native.System.Data.SqlClient.sni": {
-    "ignore": true
-  },
-  "System.Security.Principal.Windows": {
-    "listed": true,
-    "version": "5.0.0"
-  },
-  "System.Security.Cryptography.ProtectedData": {
-    "listed": true,
-    "version": "4.5.0"
+    "version": "[8.0.0,)"
   },
   "System.Memory": {
     "listed": true,
@@ -325,6 +289,10 @@
   "System.Memory.Data": {
     "listed": true,
     "version": "8.0.0"
+  },
+  "System.Net.ServerSentEvents": {
+    "listed": true,
+    "version": "[9.0.0,)"
   },
   "System.Numerics.Vectors": {
     "listed": false,
@@ -338,19 +306,43 @@
     "listed": true,
     "version": "4.4.0"
   },
+  "System.Security.AccessControl": {
+    "listed": true,
+    "version": "4.7.0"
+  },
+  "System.Security.Cryptography.Cng": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "System.Security.Cryptography.OpenSsl": {
+    "listed": true,
+    "version": "5.0.0"
+  },
+  "System.Security.Cryptography.ProtectedData": {
+    "listed": true,
+    "version": "4.5.0"
+  },
+  "System.Security.Permissions": {
+    "listed": true,
+    "version": "6.0.0"
+  },
+  "System.Security.Principal.Windows": {
+    "listed": true,
+    "version": "5.0.0"
+  },
   "System.Text.Encoding.CodePages": {
     "listed": false,
     "version": "4.4.0"
+  },
+  "System.Text.Encoding.Web": {
+    "listed": false,
+    "version": "8.0.0"
   },
   "System.Text.Encodings.Web": {
     "listed": false,
     "version": "[8.0.0,)"
   },
   "System.Text.Json": {
-    "listed": false,
-    "version": "8.0.0"
-  },
-  "System.Text.Encoding.Web": {
     "listed": false,
     "version": "8.0.0"
   },
@@ -366,22 +358,13 @@
     "listed": false,
     "version": "4.4.0"
   },
-  "Trackman.Unity.Analyzers": {
+  "System.Xml.XPath.XmlDocument": {
     "listed": true,
-    "version": "[1.0.0,)",
-    "analyzer": true
+    "version": "[4.3.0,)"
   },
   "TrackMan.SharedCalculator": {
     "listed": true,
     "version": "6.167.0"
-  },
-  "Unity3D.Interpolate.NetStandard2": {
-    "listed": true,
-    "version": "1.0.0"
-  },
-  "WebSocketSharp-netstandard": {
-    "listed": true,
-    "version": "1.0.1"
   },
   "TrackMan.SharedCalculator.runtime.linux-arm64": {
     "ignore": true
@@ -400,5 +383,18 @@
   },
   "TrackMan.SharedCalculator.runtime.win-x64": {
     "ignore": true
+  },
+  "Trackman.Unity.Analyzers": {
+    "listed": true,
+    "version": "[1.0.0,)",
+    "analyzer": true
+  },
+  "Unity3D.Interpolate.NetStandard2": {
+    "listed": true,
+    "version": "1.0.0"
+  },
+  "WebSocketSharp-netstandard": {
+    "listed": true,
+    "version": "1.0.1"
   }
 }
