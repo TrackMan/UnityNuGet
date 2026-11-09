@@ -364,7 +364,7 @@
   },
   "TrackMan.SharedCalculator": {
     "listed": true,
-    "version": "6.167.0"
+    "version": "[6.167.0,9.0.0)"
   },
   "TrackMan.SharedCalculator.runtime.linux-arm64": {
     "ignore": true
