@@ -75,3 +75,4 @@ $lines = for ($index = 0; $index -lt $sortedEntries.Count; $index++) {
 
 $output = "{`n$($lines -join "`n")`n}`n"
 [IO.File]::WriteAllText($resolvedPath, $output, [Text.UTF8Encoding]::new($false))
+
